@@ -1,0 +1,168 @@
+@import 'variable';
+
+
+* {
+  box-sizing: border-box;
+  font-family: $font-stack;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  background: url(../images/pattern-background-mobile.svg) $background-color no-repeat;
+  background-size: contain;
+  display: flex;
+  overflow-x: hidden;
+  justify-content: center;
+
+  @media only screen and (min-width: 48rem) {
+    max-width: 90rem;
+    background: url(../images/pattern-background-desktop.svg) $background-color no-repeat;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+}
+
+.main-wrapper {
+  margin: 4.375rem 1.5rem;
+  background-color: #FFF;
+  border-radius: 1.5rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  filter: drop-shadow(0 .5rem .8rem rgba(56, 42, 225, .1));
+  max-width: 20.438rem;
+
+  // Responsive styles for main-wrapper
+  @media only screen and (min-width: 48rem) {
+    max-width: 28.125rem;
+    max-height: 43.563rem;
+  }
+}
+
+.hero-image-container {
+  display: flex;
+}
+
+.hero-image {
+  width: 100%;
+  border-radius: 1.5rem 1.5rem 0 0 ;
+}
+
+.order-summary-container {
+  margin: 1rem 0 0 0;
+}
+
+.order-summary {
+  text-align: center;
+
+  h1 {
+    font-size: 1.375rem;
+  }
+
+  p {
+    color: #717FA6;
+    font-size: 0.938rem;
+    line-height: 1.563rem;
+    padding: 0 2rem;
+    margin: 1.5rem 0;
+  }
+}
+
+.annual-plan {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #F7F9FF;
+  border-radius: 1rem;
+  margin: 0 1.5rem;
+
+  .price-description {
+    h3 {
+      font-size: 0.875rem;
+      margin-bottom: 0.625rem;
+      font-weight: 800;
+    }
+
+    p {
+      font-size: 0.875rem;
+      color: #717FA6;
+      margin-top: 0;
+    }
+  }
+
+  .change {
+    color: #382AE1;
+    font-size: 0.813rem;
+    font-weight: 700;
+
+    &:hover {
+      text-decoration-line: none;
+      cursor: pointer;
+      color: #766CF1;
+    }
+  }
+}
+
+.payment-button {
+  display: block;
+  margin: 1.813rem auto;
+  background-color: #382AE1;
+  border: none;
+  color: #FFF;
+  font-size: 0.938rem;
+  font-weight: 800;
+  width: 80%;
+  padding: 1rem 0;
+  border-radius: 1rem;
+  filter: drop-shadow(0 1rem .8rem rgba(105, 141, 255, .4));
+
+  &:hover {
+    background-color: #766CF1;
+    cursor: pointer;
+  }
+}
+
+.cancel {
+  display: flex;
+  justify-content: space-around;
+  color: #717FA6;
+  font-weight: 800;
+  font-size: 0.938rem;
+  margin-bottom: 1.813rem;
+
+  &:hover {
+    color: #1F2E55;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (min-width: 48rem) {
+  .order-summary {
+    margin: 2rem 1rem;
+
+    h1 {
+      font-size: 1.75rem;
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.625rem;
+      margin: 1.813rem 0;
+    }
+  }
+
+  .annual-plan {
+    gap: 1rem;
+    margin: 0 2.5rem;
+  }
+
+  .change {
+    font-size: 0.875rem;
+    padding-left: 4rem;
+  }
+
+  .cancel {
+    margin-bottom: 2.625rem;
+  }
+}
