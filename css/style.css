@@ -118,7 +118,7 @@ body {
   color: #717FA6;
   font-weight: 800;
   font-size: 0.938rem;
-  margin-bottom: 1.813rem;
+  padding-bottom: 1.813rem;
 }
 .cancel:hover {
   color: #1F2E55;
