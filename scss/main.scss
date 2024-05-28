@@ -25,12 +25,12 @@ body {
 
 .main-wrapper {
   margin: 4.375rem 1.5rem;
-  background-color: #FFF;
+  background-color: $card-background-color;
   border-radius: 1.5rem;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  filter: drop-shadow(0 .5rem .8rem rgba(56, 42, 225, .1));
+  filter: drop-shadow(0 .5rem .8rem $shadow-color);
   max-width: 20.438rem;
 
   // Responsive styles for main-wrapper
@@ -61,7 +61,7 @@ body {
   }
 
   p {
-    color: #717FA6;
+    color: $text-color;
     font-size: 0.938rem;
     line-height: 1.563rem;
     padding: 0 2rem;
@@ -86,20 +86,20 @@ body {
 
     p {
       font-size: 0.875rem;
-      color: #717FA6;
+      color: $text-color;
       margin-top: 0;
     }
   }
 
   .change {
-    color: #382AE1;
+    color: $accent-color;
     font-size: 0.813rem;
     font-weight: 700;
 
     &:hover {
       text-decoration-line: none;
       cursor: pointer;
-      color: #766CF1;
+      color: $highlight-color;
     }
   }
 }
@@ -107,18 +107,18 @@ body {
 .payment-button {
   display: block;
   margin: 1.813rem auto;
-  background-color: #382AE1;
+  background-color: $accent-color;
   border: none;
-  color: #FFF;
+  color: $card-background-color;
   font-size: 0.938rem;
   font-weight: 800;
   width: 80%;
   padding: 1rem 0;
   border-radius: 1rem;
-  filter: drop-shadow(0 1rem .8rem rgba(105, 141, 255, .4));
+  filter: drop-shadow(0 1rem .8rem $shadow-color-2);
 
   &:hover {
-    background-color: #766CF1;
+    background-color: $highlight-color;
     cursor: pointer;
   }
 }
@@ -129,7 +129,7 @@ body {
   color: #717FA6;
   font-weight: 800;
   font-size: 0.938rem;
-  margin-bottom: 1.813rem;
+  padding-bottom: 1.813rem;
 
   &:hover {
     color: #1F2E55;
@@ -163,6 +163,6 @@ body {
   }
 
   .cancel {
-    margin-bottom: 2.625rem;
+    padding-bottom: 2.625rem;
   }
 }
