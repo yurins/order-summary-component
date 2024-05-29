@@ -6,16 +6,17 @@
 body {
   margin: 0;
   height: 100vh;
-  background: url(../images/pattern-background-mobile.svg) #E0E8FF no-repeat;
+  background: top/contain url(../images/pattern-background-mobile.svg) #E0E8FF no-repeat;
   background-size: contain;
   display: flex;
   overflow-x: hidden;
   justify-content: center;
 }
+
 @media only screen and (min-width: 48rem) {
   body {
     max-width: 90rem;
-    background: url(../images/pattern-background-desktop.svg) #E0E8FF no-repeat;
+    background: url(../images/pattern-background-desktop.svg);
     flex-wrap: wrap;
     align-items: center;
   }
@@ -31,6 +32,7 @@ body {
   filter: drop-shadow(0 0.5rem 0.8rem rgba(56, 42, 225, 0.1));
   max-width: 20.438rem;
 }
+
 @media only screen and (min-width: 48rem) {
   .main-wrapper {
     max-width: 28.125rem;
@@ -54,9 +56,11 @@ body {
 .order-summary {
   text-align: center;
 }
+
 .order-summary h1 {
   font-size: 1.375rem;
 }
+
 .order-summary p {
   color: #717FA6;
   font-size: 0.938rem;
@@ -73,21 +77,25 @@ body {
   border-radius: 1rem;
   margin: 0 1.5rem;
 }
-.annual-plan .price-description h3 {
+
+.annual-plan .price-description h2 {
   font-size: 0.875rem;
   margin-bottom: 0.625rem;
   font-weight: 800;
 }
+
 .annual-plan .price-description p {
   font-size: 0.875rem;
   color: #717FA6;
   margin-top: 0;
 }
+
 .annual-plan .change {
   color: #382AE1;
   font-size: 0.813rem;
   font-weight: 700;
 }
+
 .annual-plan .change:hover {
   text-decoration-line: none;
   cursor: pointer;
@@ -107,6 +115,7 @@ body {
   border-radius: 1rem;
   filter: drop-shadow(0 1rem 0.8rem rgba(105, 141, 255, 0.4));
 }
+
 .payment-button:hover {
   background-color: #766CF1;
   cursor: pointer;
@@ -120,6 +129,7 @@ body {
   font-size: 0.938rem;
   padding-bottom: 1.813rem;
 }
+
 .cancel:hover {
   color: #1F2E55;
   cursor: pointer;
@@ -148,4 +158,4 @@ body {
   .cancel {
     padding-bottom: 2.625rem;
   }
-}/*# sourceMappingURL=style.css.map */
+}
